@@ -46,8 +46,8 @@ update_status ModuleSceneIntro::Update()
 		SDL_Rect r;
 		r.x = rand() % App->renderer->camera.w;
 		r.y = rand() % App->renderer->camera.h;
-		r.w = rand() % App->renderer->camera.w / 4;
-		r.h = rand() % App->renderer->camera.h / 4;
+		r.w = rand() % App->renderer->camera.w /4 ;
+		r.h = rand() % App->renderer->camera.h /4;
 
 		App->collision->AddCollider(r, COLLIDER_ENEMY);
 	}
